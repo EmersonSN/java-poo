@@ -21,9 +21,8 @@ public class Product {
 	}
 
 	/* Adicoinando meios de acessar os atributos privados ENCAPSULAMENTO */
-
 	public String getName() {
-		return this.name;
+		return name;
 	}
 
 	public void setName(String name) {
@@ -31,15 +30,15 @@ public class Product {
 	}
 
 	public double getPrice() {
-		return this.price;
+		return price;
 	}
 
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	
-	public double getQuantity() {
-		return this.quantity;
+
+	public int getQuantity() {
+		return quantity;
 	}
 
 	public double totalValueStock() {
