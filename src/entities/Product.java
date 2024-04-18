@@ -12,6 +12,14 @@ public class Product {
 		this.quantity = quantity;
 	}
 
+	/*
+	 * Criando um construtor com sobrecarga do anterior, mas agora sem a quantidade
+	 */
+	public Product(String name, double price) {
+		this.name = name;
+		this.price = price;
+	}
+
 	public double totalValueStock() {
 		return price * quantity;
 	}

@@ -10,14 +10,12 @@ public class ProductInitializer {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter product data:");
-		System.out.print("Name:");
+		System.out.print("Name: ");
 		String name = sc.nextLine();
 		System.out.print("Price: ");
 		double price = sc.nextDouble();
-		System.out.print("Quantity in stock:");
-		int quantity = sc.nextInt();
 
-		Product product1 = new Product(name, price, quantity);
+		Product product1 = new Product(name, price);
 
 		System.out.println();
 
@@ -26,7 +24,7 @@ public class ProductInitializer {
 		System.out.println();
 
 		System.out.print("Enter the number of products to be added in stock: ");
-		quantity = sc.nextInt();
+		int quantity = sc.nextInt();
 		product1.addProducts(quantity);
 		System.out.println();
 		System.out.println("Updated data: " + product1);
