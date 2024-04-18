@@ -17,6 +17,11 @@ public class ProductInitializer {
 
 		Product product1 = new Product(name, price);
 
+		product1.setName("Computer");// teste do set para name
+		System.out.println("Updated name: " + product1.getName());
+		product1.setPrice(750.00);
+		System.out.printf("Updated price: R$%.2f%n", product1.getPrice());
+
 		System.out.println();
 
 		System.out.println("Product data: " + product1);

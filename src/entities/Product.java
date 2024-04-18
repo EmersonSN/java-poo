@@ -1,9 +1,9 @@
 package entities;
 
 public class Product {
-	public String name;
-	public double price;
-	public int quantity;
+	private String name;
+	private double price;
+	private int quantity;
 
 	/* Criando um construtor para que seja obrigatório a inserção de dados */
 	public Product(String name, double price, int quantity) {
@@ -18,6 +18,28 @@ public class Product {
 	public Product(String name, double price) {
 		this.name = name;
 		this.price = price;
+	}
+
+	/* Adicoinando meios de acessar os atributos privados ENCAPSULAMENTO */
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getPrice() {
+		return this.price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
+	public double getQuantity() {
+		return this.quantity;
 	}
 
 	public double totalValueStock() {
